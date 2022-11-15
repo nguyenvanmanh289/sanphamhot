@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" onload=p()>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +14,9 @@
     loop>
         <source src="video/a.mp4" type="video/mp4">
     </video>
+     <audio id="mp3" loop>
+        <source src="video/m.mp3" type="audio/mp3">
+    </audio>
     <style>
         html body{
             margin: 0;
@@ -29,9 +32,11 @@
 </body>
    <script>
      const x = document.getElementById('video');
+       const y = document.getElementById('mp3');
      
      function p(){
         x.play();
+         y.play();
      }
     setTimeout(p,1000);
 
